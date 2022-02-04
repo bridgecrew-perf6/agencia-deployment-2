@@ -28,4 +28,7 @@
 
                     p= viaje.descripcion.substr(0, 100) + '...'
 
-                    a.btn.btn-success.btn-block(href=`./${viaje.slug}`) Mas Informacion
+                    if(route)
+                        a.btn.btn-success.btn-block(href=`viajes/${viaje.slug}`) Mas Informacion
+                    else 
+                        a.btn.btn-success.btn-block(href=`./${viaje.slug}`) Mas Informacion

@@ -16,7 +16,8 @@ const paginaInicio = async (req, res) => {
             pagina: 'Inicio',
             clase: 'home',
             viajes: resultado[0],
-            testimoniales: resultado[1]
+            testimoniales: resultado[1],
+            route: './viajes'
         })
     } catch (error) {
         console.log(error);

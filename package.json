@@ -4,7 +4,7 @@
   "description": "Primer proyecto con Node.js",
   "main": "src/index.js",
   "scripts": {
-    "dev": "nodemon src",
+    "dev": "nodemon src/index.js",
     "start": "node src"
   },
   "type": "module",
@@ -17,13 +17,11 @@
   "author": "hermcode",
   "license": "MIT",
   "dependencies": {
+    "dotenv": "^16.0.0",
     "express": "^4.17.2",
     "mysql2": "^2.3.3",
+    "nodemon": "^2.0.15",
     "pug": "^3.0.2",
     "sequelize": "^6.15.0"
-  },
-  "devDependencies": {
-    "dotenv": "^16.0.0",
-    "nodemon": "^2.0.15"
   }
 }
